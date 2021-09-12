@@ -1,0 +1,159 @@
+########## Datapoint number 0
+The Actual Sentece is:
+SUPREME COURT OF THE UNITED STATES
+
+Simple Bayes: SUPREME COURT OF THE UN1TED STATES
+
+HMM Viterbi: SUPREME COURT OE THE UNITED STATES
+
+########## Datapoint number 1
+The Actual Sentece is:
+Certiorari to the United States Court of Appeals for the Sixth Circuit
+
+Simple Bayes: Cert1crar1 to tne Un1ted Stat-s Ccurr of -pp-a1a ior the S1xth C1rcu1t
+
+HMM Viterbi: CertIorafi hb the Unihed States CphrK bf Appeala fbr hhe Sixth CirbHit
+
+########## Datapoint number 2
+The Actual Sentece is:
+Nos. 14-556. Argued April 28, 2015 - Decided June 26, 2015
+
+Simple Bayes: Nos. 14-556. Argued Apri1 28, 2015 - Decided June 26, 2015
+
+HMM Viterbi: Nos. l4-556. Argued April 28, 2015 - Decided June 26, 2015
+
+########## Datapoint number 3
+The Actual Sentece is:
+Together with No. 14-562, Tanco et al. v. Haslam, Governor of
+
+Simple Bayes: Together)with"No.W14-562,WTancopet8a1.cv.-Haslam,'Governor,of
+
+HMM Viterbi: TogetherWwithBNo!WI4-562QWTanqdpet8alyqvINHaslamyBGovernorBqf
+
+########## Datapoint number 4
+The Actual Sentece is:
+Tennessee, et al., also on centiorari to the same court.
+
+Simple Bayes: Tennessee, et a1.,.a1so on cent1orar1 to the same court.
+
+HMM Viterbi: Tennessee, etGalV,Jalso onkdentiorari to the sameFgourtT
+
+########## Datapoint number 5
+The Actual Sentece is:
+Opinion of the Court
+
+Simple Bayes: Opinion5ofIthekCourt
+
+HMM Viterbi: QpihibnAdf4theEQdprt
+
+########## Datapoint number 6
+The Actual Sentece is:
+As some of the petitioners in these cases demonstrate, marriage
+
+Simple Bayes: As some of the petit1oners 1n these cases demonstrate, marr1age
+
+HMM Viterbi: As sbme bf the petitibners in these bases demonstrate, marriage
+
+########## Datapoint number 7
+The Actual Sentece is:
+embodies a love that may endure even past death.
+
+Simple Bayes: embod1es,a 1ovepthat may-endure even past death.
+
+HMM Viterbi: embodiesCaqloyepthatOmaypendureAeven pastddeathT
+
+########## Datapoint number 8
+The Actual Sentece is:
+It would misunderstand these men and women to say they disrespect
+
+Simple Bayes: 1t wou1u m1sunoerstanc th-ne men and wcmen to say th-y u1ur-sp-ct
+
+HMM Viterbi: Ih wbuld misuRderstahd theHe men ahd wbmen tb say hhey digrespebh
+
+########## Datapoint number 9
+The Actual Sentece is:
+the idea of marriage.
+
+Simple Bayes: the idea of-marriage.
+
+HMM Viterbi: theMideaBofNmarriageV
+
+########## Datapoint number 10
+The Actual Sentece is:
+Their plea is that they do respect it, respect it so deeply that
+
+Simple Bayes: Their p1ea is that they do respect it, respect it so deep1y that
+
+HMM Viterbi: Their plea is that they do respect it, respect it so deeply that
+
+########## Datapoint number 11
+The Actual Sentece is:
+they seek to find its fulfillment for themselves.
+
+Simple Bayes: they seek tc f1nd 1ts fu1f111ment for themse1ves.
+
+HMM Viterbi: they seek tb fihd its fulfillment fbr themselves.
+
+########## Datapoint number 12
+The Actual Sentece is:
+Their hope is not to be condemned to live in loneliness,
+
+Simple Bayes: Their hope is not to be ccndemned to 1ive in lone1iness,
+
+HMM Viterbi: Their hope is not to be condemned to liveFin loneliness,
+
+########## Datapoint number 13
+The Actual Sentece is:
+excluded from one of civilization's oldest institutions.
+
+Simple Bayes: exc1uded from one of civi1ization's o1dest institutions.
+
+HMM Viterbi: excluded from one of civilization's oldest institutions.
+
+########## Datapoint number 14
+The Actual Sentece is:
+They ask for equal dignity in the eyes of the law.
+
+Simple Bayes: They ask for equa1 d1gnity 1n the eyes of the 1aw.
+
+HMM Viterbi: They ask for equal dignity in the eyes of the lawV
+
+########## Datapoint number 15
+The Actual Sentece is:
+The Constitution grants them that right.
+
+Simple Bayes: ThemConstitutionggrants3them0thatbright.
+
+HMM Viterbi: ThemCbnstitutiqhggrantsXthem0thatbrighty
+
+########## Datapoint number 16
+The Actual Sentece is:
+The judgement of the Court of Appeals for the Sixth Circuit is reversed.
+
+Simple Bayes: 1he judgementrof the Court"of nppea1s for theuS1xthLCircu1t 1s reversed.
+
+HMM Viterbi: ThedjndgementEbf0the QpurtfofwAppealseforwthegSixthAGirquitTTpqreversedY
+
+########## Datapoint number 17
+The Actual Sentece is:
+It is so ordered.
+
+Simple Bayes: 1t is so ordered.
+
+HMM Viterbi: It is so ordered.
+
+########## Datapoint number 18
+The Actual Sentece is:
+KENNEDY, J., delivered the opinion of the Court, in which
+
+Simple Bayes: KENNEDY, J., de11vered the cp1n1on cf the Court, 1n wh1ch
+
+HMM Viterbi: KENNEDY, J., delivered the opinibn bf the Cburt, ih whibh
+
+########## Datapoint number 19
+The Actual Sentece is:
+GINSBURG, BREYER, SOTOMAYOR, and KAGAN, JJ., joined.
+
+Simple Bayes: G1NSBURG, BREYER,'SOTOMAYOR,Land'KACAN, JJ.,ujoined.
+
+HMM Viterbi: GINSBURG,MBREYERIjSOTOMAYOR,hahdBKAGAN,BJJvygjoinedV

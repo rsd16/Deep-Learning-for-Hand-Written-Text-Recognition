@@ -1,0 +1,417 @@
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_1 (InputLayer)         [(None, 32, 128, 1)]      0
+_________________________________________________________________
+conv2d (Conv2D)              (None, 32, 128, 64)       640
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 16, 64, 64)        0
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 16, 64, 128)       73856
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 8, 32, 128)        0
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 8, 32, 256)        295168
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 8, 32, 256)        590080
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 4, 32, 256)        0
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 4, 32, 512)        1180160
+_________________________________________________________________
+batch_normalization (BatchNo (None, 4, 32, 512)        2048
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 4, 32, 512)        2359808
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 4, 32, 512)        2048
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 2, 32, 512)        0
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 1, 31, 512)        1049088
+_________________________________________________________________
+lambda (Lambda)              (None, 31, 512)           0
+_________________________________________________________________
+bidirectional (Bidirectional (None, 31, 512)           1574912
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 31, 512)           1574912
+_________________________________________________________________
+dense (Dense)                (None, 31, 79)            40527
+=================================================================
+Total params: 8,743,247
+Trainable params: 8,741,199
+Non-trainable params: 2,048
+_________________________________________________________________
+Model: "model_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to
+==================================================================================================
+input_1 (InputLayer)            [(None, 32, 128, 1)] 0
+__________________________________________________________________________________________________
+conv2d (Conv2D)                 (None, 32, 128, 64)  640         input_1[0][0]
+__________________________________________________________________________________________________
+max_pooling2d (MaxPooling2D)    (None, 16, 64, 64)   0           conv2d[0][0]
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 16, 64, 128)  73856       max_pooling2d[0][0]
+__________________________________________________________________________________________________
+max_pooling2d_1 (MaxPooling2D)  (None, 8, 32, 128)   0           conv2d_1[0][0]
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 8, 32, 256)   295168      max_pooling2d_1[0][0]
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, 8, 32, 256)   590080      conv2d_2[0][0]
+__________________________________________________________________________________________________
+max_pooling2d_2 (MaxPooling2D)  (None, 4, 32, 256)   0           conv2d_3[0][0]
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, 4, 32, 512)   1180160     max_pooling2d_2[0][0]
+__________________________________________________________________________________________________
+batch_normalization (BatchNorma (None, 4, 32, 512)   2048        conv2d_4[0][0]
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, 4, 32, 512)   2359808     batch_normalization[0][0]
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, 4, 32, 512)   2048        conv2d_5[0][0]
+__________________________________________________________________________________________________
+max_pooling2d_3 (MaxPooling2D)  (None, 2, 32, 512)   0           batch_normalization_1[0][0]
+__________________________________________________________________________________________________
+conv2d_6 (Conv2D)               (None, 1, 31, 512)   1049088     max_pooling2d_3[0][0]
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 31, 512)      0           conv2d_6[0][0]
+__________________________________________________________________________________________________
+bidirectional (Bidirectional)   (None, 31, 512)      1574912     lambda[0][0]
+__________________________________________________________________________________________________
+bidirectional_1 (Bidirectional) (None, 31, 512)      1574912     bidirectional[0][0]
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 31, 79)       40527       bidirectional_1[0][0]
+__________________________________________________________________________________________________
+true_labels (InputLayer)        [(None, 19)]         0
+__________________________________________________________________________________________________
+input_length (InputLayer)       [(None, 1)]          0
+__________________________________________________________________________________________________
+label_length (InputLayer)       [(None, 1)]          0
+__________________________________________________________________________________________________
+ctc (Lambda)                    (None, 1)            0           dense[0][0]
+                                                                 true_labels[0][0]
+                                                                 input_length[0][0]
+                                                                 label_length[0][0]
+==================================================================================================
+Total params: 8,743,247
+Trainable params: 8,741,199
+Non-trainable params: 2,048
+__________________________________________________________________________________________________
+
+Epoch 1/10
+1206/1206 [==============================] - 407s 308ms/step - loss: 13.8708 - accuracy: 0.0266 - val_loss: 10.7694 - val_accuracy: 0.0958
+Epoch 2/10
+1206/1206 [==============================] - 477s 395ms/step - loss: 7.7962 - accuracy: 0.1570 - val_loss: 4.9228 - val_accuracy: 0.2645
+Epoch 3/10
+1206/1206 [==============================] - 470s 390ms/step - loss: 4.0341 - accuracy: 0.3008 - val_loss: 3.4289 - val_accuracy: 0.3382
+Epoch 4/10
+1206/1206 [==============================] - 473s 392ms/step - loss: 2.8876 - accuracy: 0.3998 - val_loss: 2.8055 - val_accuracy: 0.4370
+Epoch 5/10
+1206/1206 [==============================] - 473s 392ms/step - loss: 2.3531 - accuracy: 0.4655 - val_loss: 2.4708 - val_accuracy: 0.4783
+Epoch 6/10
+1206/1206 [==============================] - 487s 404ms/step - loss: 2.0810 - accuracy: 0.4962 - val_loss: 2.5945 - val_accuracy: 0.4708
+Epoch 7/10
+1206/1206 [==============================] - 496s 411ms/step - loss: 1.9181 - accuracy: 0.5259 - val_loss: 2.2297 - val_accuracy: 0.5271
+Epoch 8/10
+1206/1206 [==============================] - 494s 409ms/step - loss: 1.7396 - accuracy: 0.5541 - val_loss: 2.1391 - val_accuracy: 0.5410
+Epoch 9/10
+1206/1206 [==============================] - 479s 397ms/step - loss: 1.6432 - accuracy: 0.5718 - val_loss: 2.1712 - val_accuracy: 0.5604
+Epoch 10/10
+1206/1206 [==============================] - 492s 408ms/step - loss: 1.5126 - accuracy: 0.5945 - val_loss: 2.2458 - val_accuracy: 0.5455
+Original Text is:  support
+Predicted Text is: smgart
+
+Original Text is:  to
+Predicted Text is: to
+
+Original Text is:  will
+Predicted Text is: with
+
+Original Text is:  which
+Predicted Text is: mick
+
+Original Text is:  now
+Predicted Text is: now
+
+Original Text is:  of
+Predicted Text is: I
+
+Original Text is:  take
+Predicted Text is: take
+
+Original Text is:  Left-wing
+Predicted Text is: reft-wing
+
+Original Text is:  likely
+Predicted Text is: likely
+
+Original Text is:  Government
+Predicted Text is: Government
+
+Original Text is:  should
+Predicted Text is: schould
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  should
+Predicted Text is: should
+
+Original Text is:  prop
+Predicted Text is: pror
+
+Original Text is:  likely
+Predicted Text is: Eitodey
+
+Original Text is:  ment
+Predicted Text is: meit
+
+Original Text is:  should
+Predicted Text is: should
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  should
+Predicted Text is: should
+
+Original Text is:  prop
+Predicted Text is: prof
+
+Original Text is:  13
+Predicted Text is: 13
+
+Original Text is:  Most
+Predicted Text is: Most
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  has
+Predicted Text is: has
+
+Original Text is:  two
+Predicted Text is: two
+
+Original Text is:  to
+Predicted Text is: to
+
+Original Text is:  Welensky
+Predicted Text is: Wlelensky
+
+Original Text is:  Labour
+Predicted Text is: Labouur
+
+Original Text is:  Labour
+Predicted Text is: Labour
+
+Original Text is:  of
+Predicted Text is: of
+
+Original Text is:  have
+Predicted Text is: have
+
+Original Text is:  African
+Predicted Text is: Afiica
+
+Original Text is:  together
+Predicted Text is: together
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  Peers
+Predicted Text is: Beeis
+
+Original Text is:  sentiment
+Predicted Text is: Sentiment
+
+Original Text is:  Lords
+Predicted Text is: Hasds
+
+Original Text is:  an
+Predicted Text is: an
+
+Original Text is:  Nationalist
+Predicted Text is: Nationalist
+
+Original Text is:  to
+Predicted Text is: te
+
+Original Text is:  Federal
+Predicted Text is: Federal
+
+Original Text is:  Independence
+Predicted Text is: Independanc
+
+Original Text is:  today
+Predicted Text is: todany
+
+Original Text is:  Roy
+Predicted Text is: hoy
+
+Original Text is:  in
+Predicted Text is: in
+
+Original Text is:  Iain
+Predicted Text is: hain
+
+Original Text is:  .
+Predicted Text is: .
+
+Original Text is:  (
+Predicted Text is: I
+
+Original Text is:  Congress
+Predicted Text is: Conguess
+
+Original Text is:  discuss
+Predicted Text is: discuss
+
+Original Text is:  violently
+Predicted Text is: scolently
+
+Original Text is:  Rhodesia
+Predicted Text is: Rhodesia
+
+Original Text is:  ,
+Predicted Text is: ,
+
+Original Text is:  insisting
+Predicted Text is: inistirng
+
+Original Text is:  Federal
+Predicted Text is: Federal
+
+Original Text is:  future
+Predicted Text is: funture
+
+Original Text is:  want
+Predicted Text is: want
+
+Original Text is:  gives
+Predicted Text is: gives
+
+Original Text is:  .
+Predicted Text is: .
+
+Original Text is:  his
+Predicted Text is: his
+
+Original Text is:  at
+Predicted Text is: at
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  to
+Predicted Text is: to
+
+Original Text is:  Roy's
+Predicted Text is: Ray's
+
+Original Text is:  chief
+Predicted Text is: dief
+
+Original Text is:  Chequers
+Predicted Text is: Cheaness
+
+Original Text is:  London
+Predicted Text is: dondon
+
+Original Text is:  last
+Predicted Text is: last
+
+Original Text is:  do
+Predicted Text is: do
+
+Original Text is:  and
+Predicted Text is: and
+
+Original Text is:  be
+Predicted Text is: be
+
+Original Text is:  Mr.
+Predicted Text is: MS.
+
+Original Text is:  his
+Predicted Text is: his
+
+Original Text is:  went
+Predicted Text is: went
+
+Original Text is:  crisis
+Predicted Text is: Crisis
+
+Original Text is:  his
+Predicted Text is: his
+
+Original Text is:  These
+Predicted Text is: Tese
+
+Original Text is:  they
+Predicted Text is: they
+
+Original Text is:  .
+Predicted Text is: .
+
+Original Text is:  a
+Predicted Text is: a
+
+Original Text is:  with
+Predicted Text is: with
+
+Original Text is:  had
+Predicted Text is: hack
+
+Original Text is:  plans
+Predicted Text is: plans
+
+Original Text is:  do
+Predicted Text is: do
+
+Original Text is:  seeking
+Predicted Text is: seeking
+
+Original Text is:  conference
+Predicted Text is: conference
+
+Original Text is:  House
+Predicted Text is: Hause
+
+Original Text is:  conference
+Predicted Text is: conference
+
+Original Text is:  up
+Predicted Text is: up
+
+Original Text is:  the
+Predicted Text is: the
+
+Original Text is:  give
+Predicted Text is: give
+
+Original Text is:  .
+Predicted Text is: .
+
+Original Text is:  will
+Predicted Text is: will
+
+Original Text is:  of
+Predicted Text is: of
+
+Original Text is:  ,
+Predicted Text is: ,
+
+Original Text is:  been
+Predicted Text is: been
+
+Original Text is:  Rhodesia
+Predicted Text is: Rhodesia
+
+Original Text is:  main
+Predicted Text is: mash
+
+Original Text is:  Dominion
+Predicted Text is: Dorsinion
+
+Original Text is:  Prime
+Predicted Text is: Prime
